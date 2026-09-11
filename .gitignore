@@ -1,0 +1,58 @@
+# Java Compiled Executables & Libraries
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+nbproject/
+.nb-gradle/
+
+# Competitive Programming & Build Directories
+.cph/
+build/
+bin/
+out/
+target/
+
+# Personal / Media / Temporary files
+*.zip
+*.ZIP
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
+*.png
+*.PNG
+*.gif
+*.GIF
+Sem-1/Paper/
+Sem-1/Books/
+Sem-1/Taskin/
+Sem-1/raw-files/
+
+# Temporary ignore till submitting assignments

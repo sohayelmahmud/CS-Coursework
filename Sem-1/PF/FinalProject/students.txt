@@ -1,0 +1,53 @@
+101,Sohayel Mahmud,21,92.5,88
+102,Abdullah Al Rifat,22,85.0,95
+103,Naimur Rahman,20,78.2,84
+104,Afsana Mimi,19,65.4,72
+105,Tanvir Ahmed,23,45.0,90
+106,Sajid Islam,21,89.5,81
+107,Fariha Zaman,22,91.2,93
+108,Mahfuz Anam,20,55.6,68
+109,Anika Tabassum,19,73.8,85
+110,Asif Entaz,24,38.0,60
+111,eee,23,23.0,23
+112,Rifat Khan,21,82.4,87
+113,Sadia Sultana,20,69.5,79
+114,Imran Hossen,22,48.5,74
+115,Nusrat Jahan,19,95.0,96
+116,Arif Rayhan,23,76.3,83
+117,Jannatul Ferdous,21,62.0,70
+118,Kazi Anas,20,88.7,91
+119,Mehedi Hasan,22,59.4,65
+120,Taskin Ahmed,19,41.2,77
+121,Sabrina Yasmin,21,74.5,82
+122,Rakibul Islam,23,83.0,89
+123,Farhana Riya,20,90.5,94
+124,Zubair Rahman,22,67.8,76
+125,Tamim Iqbal,19,52.3,71
+126,Mitu Akter,21,79.0,85
+127,Shahriar Shakil,20,86.4,88
+128,Laboni Khatun,22,44.0,63
+129,Fahim Faisal,19,93.2,97
+130,Nabila Islam,23,71.5,80
+131,Sabbir Rahman,21,60.5,73
+132,Riya Moni,20,81.4,86
+133,Munna Hasan,22,57.0,69
+134,Sumaiya Akter,19,87.5,92
+135,Emon Hossain,24,35.5,58
+136,Tisha Debnath,21,75.2,81
+137,Alamin Sarker,20,63.8,75
+138,Jarin Tasnim,22,94.0,95
+139,Mastura Rahman Ifrit,20,100.0,100
+140,Nipa Rani,23,82.1,89
+141,Kamrul Hasan,21,70.2,78
+142,Asha Khatun,20,53.4,72
+143,Rimon Islam,22,89.0,91
+144,Lamia Rahman,19,66.5,84
+145,Hasan Tareq,23,42.8,61
+146,Pooja Das,21,77.9,83
+147,Yeasin Arafat,20,85.5,90
+148,Shanta Islam,22,91.8,94
+149,Mizanur Rahman,19,58.2,70
+150,Israt Jahan,23,80.0,87
+151,Hajjaj Mahmud,22,99.0,80
+152,Jim,22,99.0,99
+153,Jim,23,99.0,89
