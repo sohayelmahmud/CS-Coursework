@@ -12,37 +12,49 @@ class Time {
     }
 
     public void displayTime24hFormat() {
-        System.out.printf("\nTime is: %02d:%02d:%02d\n", hours, minutes, seconds);
+        System.out.printf("\nTime is (in 24H format): %02d:%02d:%02d\n", hours, minutes, seconds);
     }
 
     public void displayTime12hFormat() {
-        String meridien = (hours >= 12) ? "pm" : "am";
+        String meridien;
+        if (hours >= 12) {
+            meridien = "pm";
+        } else {
+            meridien = "am";
+        }
         int displayHours = hours % 12;
         if (displayHours == 0) {
             displayHours = 12;
         }
 
-        System.out.printf("\nTime is: %02d:%02d:%02d %s\n", displayHours, minutes, seconds, meridien);
+        System.out.printf("\nTime is (in 12H format): %02d:%02d:%02d %s\n", displayHours, minutes, seconds, meridien);
     }
 }
 
 public class LabTask2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         Time t1 = new Time();
 
         System.out.print("Enter Hours (0-23): ");
-        int h = scanner.nextInt();
+        int h = input.nextInt();
 
         System.out.print("Enter Minutes (0-59): ");
-        int m = scanner.nextInt();
+        int m = input.nextInt();
 
         System.out.print("Enter Seconds (0-59): ");
-        int s = scanner.nextInt();
+        int s = input.nextInt();
 
         t1.setTime(h, m, s);
-        t1.displayTime24hFormat();
 
-        scanner.close();
+        System.out.print("In which format do you want to see the time?\n1. 24H format\n2. 12H format\nEnter 1 or 2: ");
+        int choice = input.nextInt();
+        if (choice == 1) {
+            t1.displayTime24hFormat();
+        } else {
+            t1.displayTime12hFormat();
+        }
+
+        input.close();
     }
 }

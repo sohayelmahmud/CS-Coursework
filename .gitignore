@@ -50,9 +50,24 @@ target/
 *.PNG
 *.gif
 *.GIF
+*.pdf
+*.PDF
+*.docx
+*.xlsx
+*.pptx
+*.ppt
+
+
+
 Sem-1/Paper/
 Sem-1/Books/
 Sem-1/Taskin/
 Sem-1/raw-files/
+Sem-2/Bio-Informatics/
+Sem-2/Discrete-Structure/
+Sem-2/Expository-Writing/
+Sem-2/raw-files/
+Sem-2/Fehmul-Quran/
+Sem-2/Tech-Biz-Writing/
 
 # Temporary ignore till submitting assignments

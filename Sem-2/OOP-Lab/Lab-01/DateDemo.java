@@ -15,13 +15,15 @@ public class DateDemo {
         date1.month = "December";
         date1.day = 31;
         date1.year = 2012;
-        System.out.println("date1:");
+        System.out.print("date1: ");
         date1.displayDate();
+
         date2 = new Date();
         date2.month = "July";
         date2.day = 4;
         date2.year = 1776;
-        System.out.println("date2:");
+        System.out.print("date2: ");
         date2.displayDate();
+
     }
 }
