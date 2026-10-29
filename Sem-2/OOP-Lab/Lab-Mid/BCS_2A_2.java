@@ -1,4 +1,4 @@
-// LendingRecord.java
+// LendingRecord
 class LendingRecord {
     String borrowerName;
     int borrowingDays;
@@ -15,7 +15,7 @@ class LendingRecord {
     }
 }
 
-// Equipment.java
+// Equipment
 class Equipment {
     int equipmentId;
     String equipmentName;
@@ -41,7 +41,7 @@ class Equipment {
     }
 }
 
-// SpecializedEquipment.java
+// SpecializedEquipment
 class SpecializedEquipment extends Equipment {
     String equipmentCategory;
 
@@ -67,7 +67,7 @@ class SpecializedEquipment extends Equipment {
     }
 }
 
-// EquipmentManager.java
+// EquipmentManager
 class EquipmentManager {
 
     void updateDailyCharge(LendingRecord r, double newCharge) {
@@ -100,17 +100,18 @@ class EquipmentManager {
     }
 }
 
-// Main.java
+// Main
 public class BCS_2A_2 {
     public static void main(String[] args) {
         EquipmentManager manager = new EquipmentManager();
         Equipment[] items = new Equipment[5];
 
-        items[0] = new Equipment(1, "Projector", new LendingRecord("Ali", 5, 500));
-        items[1] = new Equipment(2, "Laptop", new LendingRecord("Sara", 3, 800));
-        items[2] = new Equipment(3, "Camera", new LendingRecord("Rahim", 7, 600));
-        items[3] = new SpecializedEquipment(4, "3D Printer", new LendingRecord("Karim", 4, 2000), "Lab Equipment");
-        items[4] = new SpecializedEquipment(5, "Microscope", new LendingRecord("Nadia", 2, 1500), "Research Equipment");
+        items[0] = new Equipment(1, "Projector", new LendingRecord("Sajida", 5, 500));
+        items[1] = new Equipment(2, "Laptop", new LendingRecord("Ifrit", 3, 800));
+        items[2] = new Equipment(3, "Camera", new LendingRecord("Hajjaj", 7, 600));
+        items[3] = new SpecializedEquipment(4, "3D Printer", new LendingRecord("Jim", 4, 2000), "Lab Equipment");
+        items[4] = new SpecializedEquipment(5, "Microscope", new LendingRecord("Prince", 2, 1500),
+                "Research Equipment");
 
         System.out.println("=== All Equipment ===");
         for (Equipment e : items) {
@@ -118,12 +119,12 @@ public class BCS_2A_2 {
             System.out.println("-------------------");
         }
 
-        // Update one item's daily charge
+        // update one item's daily charge
         System.out.println("=== Updating Equipment 1 Daily Charge ===");
         manager.updateDailyCharge(items[0].lendingRecord, 550);
         manager.displayEquipment(items[0]);
 
-        // Find most expensive equipment
+        // find most expensive equipment
         System.out.println("=== Most Expensive Equipment ===");
         Equipment highest = manager.findMostExpensiveEquipment(items);
         if (highest != null) {

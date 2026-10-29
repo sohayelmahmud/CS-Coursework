@@ -1,4 +1,4 @@
-// HospitalSystem.java
+// HospitalSystem
 class Appointment {
     String doctorName;
     String department;
@@ -101,12 +101,12 @@ public class BAI_2_1 {
             System.out.println("-------------------");
         }
 
-        // Increase fee of patient 1
+        // increase fee of patient 1
         System.out.println("=== Increasing Fee of Patient 1 ===");
         manager.increaseFee(patients[0].appointment);
         manager.displayPatient(patients[0]);
 
-        // Find patient with highest fee
+        // find patient with highest fee
         System.out.println("=== Patient with Highest Fee ===");
         Patient highest = manager.findPatientWithHighestFee(patients);
         if (highest != null) {

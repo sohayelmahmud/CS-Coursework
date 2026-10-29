@@ -1,5 +1,5 @@
 
-// ElectronicsStore.java
+// ElectronicsStore
 import java.util.ArrayList;
 
 abstract class Product {
@@ -15,7 +15,7 @@ abstract class Product {
         this.category = category;
     }
 
-    // Controlled access (encapsulation)
+    // controlled access -- encapsulation
     public String getName() {
         return name;
     }
@@ -52,10 +52,10 @@ abstract class Product {
         this.category = category;
     }
 
-    // Abstract display
+    // abstract display
     public abstract void displayDetails();
 
-    // Compare two products
+    // compare 2 products
     public boolean equals(Product other) {
         if (other == null)
             return false;
@@ -111,17 +111,17 @@ class Smartphone extends Product {
     }
 }
 
-// Order class: single or multiple products using same operation
+// order class -- single or multiple products using same operation
 class Order {
     private ArrayList<Product> products = new ArrayList<>();
 
-    // Single product order
+    // single
     public void placeOrder(Product p) {
         if (p != null)
             products.add(p);
     }
 
-    // Multiple products order (bundle) – same operation name, overloaded
+    // multiple -- same operation name, overloaded
     public void placeOrder(Product[] items) {
         if (items != null) {
             for (Product p : items) {
@@ -143,7 +143,7 @@ class Order {
     }
 }
 
-// Billing system receives complete order object
+// billing system receives complete order object
 class BillingSystem {
     public void processOrder(Order order) {
         System.out.println("\n======= RECEIPT =======");
@@ -172,17 +172,17 @@ public class BCS_SP26_1 {
         System.out.println("laptop1 equals laptop2? " + laptop1.equals(laptop2));
         System.out.println("phone1 equals phone2? " + phone1.equals(phone2));
 
-        // Invalid price test (encapsulation)
+        // invalid price test -- encapsulation
         System.out.println("\n=== Invalid Price Attempt ===");
         phone1.setPrice(-500);
 
-        // Single product order
+        // single product order
         BillingSystem billing = new BillingSystem();
         Order order1 = new Order();
         order1.placeOrder(laptop1);
         billing.processOrder(order1);
 
-        // Bundle order: Work From Home Kit (laptop + smartphones)
+        // bundle order: work from Home kit -- laptop + smartphones
         Order order2 = new Order();
         order2.placeOrder(new Product[] { laptop2, phone1, phone2 });
         billing.processOrder(order2);

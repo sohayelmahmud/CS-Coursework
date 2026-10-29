@@ -1,4 +1,4 @@
-// RentalAgreement.java
+// RentalAgreement
 class RentalAgreement {
     String customerName;
     int rentalDays;
@@ -15,7 +15,7 @@ class RentalAgreement {
     }
 }
 
-// Vehicle.java
+// Vehicle
 class Vehicle {
     int vehicleId;
     String vehicleModel;
@@ -41,7 +41,7 @@ class Vehicle {
     }
 }
 
-// PremiumVehicle.java
+// PremiumVehicle
 class PremiumVehicle extends Vehicle {
     String luxuryCategory;
 
@@ -67,7 +67,7 @@ class PremiumVehicle extends Vehicle {
     }
 }
 
-// RentalManager.java
+// RentalManager
 class RentalManager {
 
     void updateDailyRate(RentalAgreement r, double newRate) {
@@ -100,16 +100,17 @@ class RentalManager {
     }
 }
 
-// Main.java
+// Main
 public class BCS_2A_1 {
     public static void main(String[] args) {
         Vehicle[] vehicles = new Vehicle[5];
 
-        vehicles[0] = new Vehicle(1, "Toyota Corolla", new RentalAgreement("Ali", 5, 3000));
-        vehicles[1] = new Vehicle(2, "Honda Civic", new RentalAgreement("Sara", 3, 4000));
-        vehicles[2] = new Vehicle(3, "Suzuki Alto", new RentalAgreement("Rahim", 7, 2000));
-        vehicles[3] = new PremiumVehicle(4, "BMW X5", new RentalAgreement("Karim", 4, 10000), "Luxury SUV");
-        vehicles[4] = new PremiumVehicle(5, "Mercedes E-Class", new RentalAgreement("Nadia", 2, 15000), "Luxury Sedan");
+        vehicles[0] = new Vehicle(1, "Toyota Corolla", new RentalAgreement("Sajida", 5, 3000));
+        vehicles[1] = new Vehicle(2, "Honda Civic", new RentalAgreement("Ifrit", 3, 4000));
+        vehicles[2] = new Vehicle(3, "Suzuki Alto", new RentalAgreement("Hajjaj", 7, 2000));
+        vehicles[3] = new PremiumVehicle(4, "BMW X5", new RentalAgreement("Jim", 4, 10000), "Luxury SUV");
+        vehicles[4] = new PremiumVehicle(5, "Mercedes E-Class", new RentalAgreement("Prince", 2, 15000),
+                "Luxury Sedan");
 
         RentalManager manager = new RentalManager();
         System.out.println("=== All Vehicles ===");
@@ -118,12 +119,12 @@ public class BCS_2A_1 {
             System.out.println("-------------------");
         }
 
-        // Update one vehicle's daily rate
+        // update one vehicle's daily rate
         System.out.println("=== Updating Vehicle 1 Daily Rate ===");
         manager.updateDailyRate(vehicles[0].rentalAgreement, 3500);
         manager.displayVehicle(vehicles[0]);
 
-        // Find highest cost vehicle
+        // find highest cost vehicle
         System.out.println("=== Vehicle with Highest Rental Cost ===");
         Vehicle highest = manager.findVehicleWithHighestRentalCost(vehicles);
         if (highest != null) {

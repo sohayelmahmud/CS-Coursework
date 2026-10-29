@@ -15,7 +15,7 @@ abstract class Book {
         this.genre = genre;
     }
 
-    // Customers can view
+    // customers view
     public String getTitle() {
         return title;
     }
@@ -24,7 +24,7 @@ abstract class Book {
         return price;
     }
 
-    // Only authorized staff (admin) can modify
+    // authorized staff can modify
     protected void setTitle(String title) {
         this.title = title;
     }
@@ -101,17 +101,17 @@ class Novel extends Book {
     }
 }
 
-// Bundle order support
+// bundle order
 class Order {
     private ArrayList<Book> books = new ArrayList<>();
 
-    // Single book order
+    // single
     public void placeOrder(Book b) {
         if (b != null)
             books.add(b);
     }
 
-    // Bundle order (multiple books)
+    // bundle order -- multiple books
     public void placeOrder(Book[] items) {
         if (items != null) {
             for (Book b : items) {
@@ -161,7 +161,7 @@ public class BCS_SP26_2 {
         System.out.println("tb1 equals tb2? " + tb1.equals(tb2));
         System.out.println("n1 equals n2? " + n1.equals(n2));
 
-        // Invalid price attempt (encapsulation)
+        // invalid price attempt -- encapsulation
         System.out.println("\n=== Invalid Price Attempt ===");
         n1.setPrice(-100); // protected – accessible in same file, but validates
 
@@ -172,7 +172,7 @@ public class BCS_SP26_2 {
         order1.placeOrder(n1);
         billing.processOrder(order1);
 
-        // Exclusive Study Pack bundle: textbook + notebook + bookmark (represented as
+        // exclusive study pack bundle -- textbook + notebook + bookmark (represented as
         // books here)
         Textbook notebook = new Textbook("Study Notebook", "Hamdan Store", 300, "Stationery", 1);
         Textbook bookmark = new Textbook("Bookmark", "Hamdan Store", 50, "Stationery", 1);

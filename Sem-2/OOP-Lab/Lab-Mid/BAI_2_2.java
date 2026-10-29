@@ -1,4 +1,4 @@
-// UniversitySystem.java
+// UniversitySystem
 class Project {
     String projectTitle;
     String supervisorName;
@@ -101,12 +101,12 @@ public class BAI_2_2 {
             System.out.println("-------------------");
         }
 
-        // Increase complexity of student 1's project
+        // increase complexity of student 1's project
         System.out.println("=== Increasing Complexity of Student 1's Project ===");
         manager.increaseComplexity(students[0].project);
         manager.displayStudent(students[0]);
 
-        // Find student with most complex project
+        // find student with most complex project
         System.out.println("=== Student with Most Complex Project ===");
         Student highest = manager.findMostComplexProject(students);
         if (highest != null) {
