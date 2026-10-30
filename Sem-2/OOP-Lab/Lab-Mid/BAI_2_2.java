@@ -7,7 +7,9 @@ class Project {
     Project(String projectTitle, String supervisorName, int complexityLevel) {
         this.projectTitle = projectTitle;
         this.supervisorName = supervisorName;
-        this.complexityLevel = complexityLevel;
+        this.complexityLevel = (complexityLevel >= 1 && complexityLevel <= 5) ? complexityLevel : 1; // defau;t velue 1,
+                                                                                                     // if it's not in
+                                                                                                     // 1-5
     }
 
     void displayProject() {

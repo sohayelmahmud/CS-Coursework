@@ -41,7 +41,8 @@ class EmergencyPatient extends Patient {
     EmergencyPatient(int patientId, String patientName, String doctorName, String department,
             double consultationFee, int emergencyLevel) {
         super(patientId, patientName, doctorName, department, consultationFee);
-        this.emergencyLevel = emergencyLevel;
+        this.emergencyLevel = (emergencyLevel <= 5 && emergencyLevel >= 1) ? emergencyLevel : 1; // defau;t velue 1, if
+                                                                                                 // it's not in 1-5
     }
 
     @Override
